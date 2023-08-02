@@ -100,7 +100,9 @@ class Events extends Component {
           {this.renderEventsList()}
         </div>
         <ActiveEventRegistrationDetails
-          getActiveEventRegistrationStatus={this.getActiveEventRegistrationStatus()}
+          getActiveEventRegistrationStatus={
+            this.getActiveEventRegistrationStatus
+          }
         />
       </div>
     )
@@ -108,3 +110,4 @@ class Events extends Component {
 }
 
 export default Events
+
