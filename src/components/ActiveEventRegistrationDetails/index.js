@@ -62,7 +62,8 @@ const ActiveEventRegistrationDetails = props => {
   )
 
   const renderActiveEventRegistrationDetails = () => {
-    switch (activeEventRegistrationStatus) {
+    const registrationStatusValue = getActiveEventRegistrationStatus()
+    switch (registrationStatusValue) {
       case registrationStatus.yesToRegister:
         return renderYetToRegisterView()
       case registrationStatus.registered:
