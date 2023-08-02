@@ -8,7 +8,7 @@ const registrationStatus = {
 }
 
 const ActiveEventRegistrationDetails = props => {
-  const {activeEventRegistrationStatus} = props
+  const {getActiveEventRegistrationStatus} = props
 
   const renderNoActiveEventView = () => (
     <p className="no-active-event-registration">
@@ -40,7 +40,7 @@ const ActiveEventRegistrationDetails = props => {
         className="registered-img"
       />
       <h1 className="registered-closed-heading">
-        You have already registered for this event
+        You have already registered for the event
       </h1>
     </div>
   )
